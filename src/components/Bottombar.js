@@ -19,7 +19,8 @@ export default class Bottombar extends Component<{}> {
     }
 
     GoToWork(){
-        Actions.work();
+        alert('aaaa')
+        //Actions.work();
     }
 
     GoToBooking(){
@@ -39,7 +40,7 @@ export default class Bottombar extends Component<{}> {
 
             <Footer style={pagestyles.footerStyle}>
                 <FooterTab  style={{ backgroundColor: GLOBAL.PRIMARY_COLOR }}>
-                    <Button vertical onPress={this.GoToWork}>
+                    <Button onPress={this.GoToWork}>
                         <Icon name="walk" style={ pagestyles.bottomText }/>
                         <Text style={pagestyles.bottomText}>{GLOBAL.START_WORK_BUTTON_TEXT} Work</Text>
                     </Button>
